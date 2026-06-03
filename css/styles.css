@@ -58,6 +58,10 @@ nav a {
   /*border-bottom: #555 solid 3px;*/
   box-shadow: 5px 4px darkgray;
 }
+nav a:hover{
+  background-color: rgba(84, 83, 83, 0.411)a(84, 83, 83, 0.411);
+}
+
 
 /* fin de nav*/
 /*comienzo de main*/
@@ -84,16 +88,57 @@ section div {
   border-radius: 15px;
 }
 #eeuu {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_the_United_States_%281912-1959%29.svg/3840px-Flag_of_the_United_States_%281912-1959%29.svg.png);
+  background-image: url(../img/eeuu.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 #can{
-  background-image: url(https://drive.google.com/drive/u/0/folders/1yGDu3DvTFMAl1o4luo6hW8lgmXRrTsd6);
+  background-image: url(../img/canada.png);
   background-repeat: no-repeat;
 
 }
+#mx{
+  background-image: url(../img/mexico.svg);
+  background-repeat: no-repeat;
+
+}
+
+/*videos*/
+#video{
+  width: 600px;
+  height: 300px;
+}
+/*presentacion*/
+#presentacion{
+  height: 600px;
+}
+
+.videos_locales{
+  background-color: #555;
+  width: 600px;
+  border: #000 solid 7px;
+  box-shadow: #555 5px 2px;
+  text-align: center;
+  margin: 0 auto;
+}
 /*fin de main*/
+/*pagina estadios*/
+.estadosunidos h2{
+  text-align: center;
+}
+table, tr, td,th{
+  border: solid red 2px;
+  border-collapse: collapse;
+  width: 400px;
+  margin: 0 auto;
+}
+tr :hover{
+  background-color: #555;
+}
+td img{
+  width: 200px;
+}
+
 /*comienzo de footer*/
 
 footer {
