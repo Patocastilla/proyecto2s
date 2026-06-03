@@ -115,11 +115,13 @@ section div {
 
 .videos_locales{
   background-color: #555;
-  width: 600px;
+  width: 630px;
+  height: 320px;
   border: #000 solid 7px;
   box-shadow: #555 5px 2px;
   text-align: center;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 /*fin de main*/
 /*pagina estadios*/
@@ -183,3 +185,4 @@ h1 {
   font-weight: bold;
   font-size: 1.5rem;
 }
+/*selecciones*/
