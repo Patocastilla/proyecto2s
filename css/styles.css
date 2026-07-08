@@ -67,7 +67,7 @@ nav a:hover{
 /*comienzo de main*/
 section {
   width: 900px;
-  height: 400px;
+padding: 20px;
   background-color: #555;
   margin: 0 auto;
   margin-bottom: 15px;
@@ -241,4 +241,26 @@ h1 {
 }
 .resenia p{
   font-size: 16px;
+}
+/*******entradas*****/
+#formulario{
+  width: 500px;
+  height: 800px;
+  float: left;
+  background-color: aqua;
+  padding: 25px;
+}
+#formulario input{
+  width: 100%;
+
+}
+#formulario label{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+
+}
+#formulario h2{
+  text-align: center;
+  text-shadow:2px 2px 4px #555 ;
+  font-size: 40px;
 }
