@@ -37,32 +37,38 @@
     <section>
       <div id="formulario">
         <h2>Tus datos</h2>
+        
         <form action="#">
           <label for="formnombre">Nombre</label>
-          <input type="text" name="formnombre" id="formnombre" maxlength="30" minlength="3" required
-            placeholder="Ingrese su nombre">
-          <label for="formapellido">Apelido</label>
+          <input type="text" name="formnombre" id="formnombre" maxlength="30" minlength="5" required 
+          placeholder="Ingrese su nombre" >
+          
+          <label for="formapellido">Apellido</label>
           <input type="text" name="formapellido" id="formapellido" maxlength="30" minlength="3" required
             placeholder="Ingrese su apellido">
+          
           <input id="formedad" required type="number" placeholder="Ingrese su edad">
+
           <input id="formclave" required type="password" placeholder="Ingrese la palabra secreta">
 
-          <input type="email" placeholder="patocastilla@dom.com">
+          <input id="formcorreo" type="email" placeholder="correopp@dom.com">
 
           <input type="radio" id="formf" name="formsexo" value="Femenino">
           <label for="fem">Femenino</label>
           <input type="radio" id="formm" name="formsexo" value="Masculino">
-          <label for="fem">Masculina</label>
+          <label for="masc">Masculina</label>
           <input type="radio" id="formn" name="formsexo" value="Nodecirlo">
-          <label for="fem">No informo</label><br> <br>
+          <label for="noinf">No informo</label><br> <br>
 
-          <label for="ubicaciones">Seleccione una ubicación</label><br>
+          <label for="ubicacion">Seleccione una ubicación</label><br>
           <select name="ubicacion" id="formubi">
             <option value="plateaa">Platea Alta</option>
             <option value="plateam">Platea Media</option>
             <option value="plateab">Platea Baja</option>
+            <option value="popular">Popular</option>
+            <option value="palco">Palco</option>
           </select>
-
+          <textarea name="areatexto" id="formtext" cols="30" rows="5"></textarea>
 
           <input type="submit">
 

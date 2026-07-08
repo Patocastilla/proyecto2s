@@ -242,13 +242,16 @@ h1 {
 .resenia p{
   font-size: 16px;
 }
-/*******entradas*****/
+/*************************************entradas******************************/
 #formulario{
   width: 500px;
-  height: 800px;
+  height: 950px;
   float: left;
   background-color: aqua;
   padding: 25px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  border-bottom: 2px solid #ecf0f1;
 }
 #formulario input{
   width: 100%;
@@ -263,4 +266,100 @@ h1 {
   text-align: center;
   text-shadow:2px 2px 4px #555 ;
   font-size: 40px;
+}
+
+
+
+/* ==========================================================================
+   2. Estructura del Formulario (Inputs de Texto, Email, Password, Select)
+   ========================================================================== */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Aplicamos estilos comunes a todos los inputs principales y al select */
+label, 
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"],
+select {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+/* Estilos exclusivos para las etiquetas de texto */
+label {
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 6px;
+}
+
+/* Estilizamos las cajas de entrada de datos */
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background-color: #fff;
+  box-sizing: border-box; /* Evita que el padding deforme el ancho */
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto de enfoque (Focus) cuando el usuario hace clic en un campo */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
+}
+
+/* ==========================================================================
+   3. Estilos para los Radio Buttons (Sexo)
+   ========================================================================== */
+/* Agrupamos visualmente los radios para que no se peguen */
+input[type="radio"] {
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+/* Estilo para las etiquetas específicas de los botones radio */
+#formulario input[type="radio"] + #formulario label {
+  font-weight: normal;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   4. Botón de Envío (Submit)
+   ========================================================================== */
+#formulario input[type="submit"] {
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+#formulario input[type="submit"]:hover {
+  background-color: #2b6cb0;
+}
+
+input[type="submit"]:active {
+  transform: scale(0.98);
 }
